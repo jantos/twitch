@@ -9,6 +9,6 @@ var playSound = (function beep() {
 })();
 
 // Will play a sound whenever a new message arrives in the chat window.
-$('.chat-list__list-container').addEventListener("DOMNodeInserted", function(ev){
+$('.chat-scrollable-area__message-container').addEventListener("DOMNodeInserted", function(ev){
     playSound();
 });
